@@ -1,0 +1,27 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.home__message {
+  font-family: var(--font-data);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  margin: 0;
+  text-align: center;
+  padding: var(--space-4) 0;
+}
+
+.home__message--error {
+  color: var(--color-alert);
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-2);
+}

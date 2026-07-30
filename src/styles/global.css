@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&family=Oswald:wght@700;800&display=swap');
+
+:root {
+  --color-void: #020202;
+  --color-white: #ffffff;
+  --color-active: #ccff00;
+  --color-alert: #ff4500;
+  --color-surface: #121212;
+  --color-border: #262626;
+  --color-muted: #8e8e93;
+
+  --font-display: 'Oswald', 'Impact', 'Arial Black', sans-serif;
+  --font-data: 'Inter', 'Roboto', sans-serif;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: var(--color-void);
+  color: var(--color-white);
+  font-family: var(--font-data);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  padding: var(--space-4) 5%;
+}

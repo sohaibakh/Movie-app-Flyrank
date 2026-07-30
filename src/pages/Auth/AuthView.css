@@ -1,0 +1,113 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+}
+
+.auth__card {
+  width: 100%;
+  max-width: 400px;
+  padding: var(--space-4);
+  background-color: var(--color-surface);
+  border: 2px solid var(--color-border);
+}
+
+.auth__title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 0 0 var(--space-4);
+  text-align: center;
+}
+
+.auth__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.auth__input {
+  width: 100%;
+  padding: var(--space-2);
+  border: 2px solid var(--color-border);
+  background-color: var(--color-void);
+  color: var(--color-white);
+  font-family: var(--font-data);
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  outline: none;
+  transition: border-color 0.15s ease;
+}
+
+.auth__input:focus {
+  border-color: var(--color-active);
+}
+
+.auth__input::placeholder {
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.auth__input:disabled {
+  opacity: 0.5;
+}
+
+.auth__error {
+  font-family: var(--font-data);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-alert);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0;
+  text-align: center;
+}
+
+.auth__submit {
+  min-height: 48px;
+  padding: 0 var(--space-3);
+  border: 2px solid var(--color-active);
+  background-color: var(--color-active);
+  color: var(--color-void);
+  font-family: var(--font-data);
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: box-shadow 0.15s ease;
+}
+
+.auth__submit:hover:not(:disabled) {
+  box-shadow: 0 0 25px rgba(204, 255, 0, 0.4);
+}
+
+.auth__submit:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.auth__toggle {
+  margin-top: var(--space-3);
+  border: none;
+  background: none;
+  color: var(--color-muted);
+  font-family: var(--font-data);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.auth__toggle:hover {
+  color: var(--color-active);
+}
